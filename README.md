@@ -93,7 +93,7 @@ The launcher is fully configured through a single `config.json` file. Each tile 
 
 ## 📸 Screenshot
 
-> _(Insert launcher screenshot here)_
+![TV Launcher Screenshot](https://ltdfoto.ru/images/2025/07/17/image5700554897f98202.png)
 
 ---
 
