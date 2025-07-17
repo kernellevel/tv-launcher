@@ -1,0 +1,88 @@
+:root {
+	--background-color: #141414;
+	--text-color: #f5f5f5;
+	--tile-focus-color: #ffffff;
+	--tile-gap: 30px;
+	--tile-border-radius: 12px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	overflow: hidden;
+	user-select: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	gap: var(--tile-gap);
+	padding: 50px;
+	height: 100vh;
+}
+
+.tile {
+	width: 280px;
+	height: 160px;
+	background-size: cover;
+	background-position: center;
+	border-radius: var(--tile-border-radius);
+	border: 4px solid transparent;
+	transition: transform 0.2s ease-out, border-color 0.2s ease-out;
+	cursor: pointer;
+	display: flex;
+	align-items: flex-end;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.tile::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+	z-index: 1;
+}
+
+.tile-name {
+	font-size: 24px;
+	font-weight: 600;
+	z-index: 2;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tile.focused {
+	transform: scale(1.08);
+	border-color: var(--tile-focus-color);
+}
+
+.error-message {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #e53935;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 8px;
+	z-index: 100;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.error-message.visible {
+	opacity: 1;
+}

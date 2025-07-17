@@ -1,0 +1,29 @@
+{
+	"theme": {
+		"background": "#101010",
+		"text": "#f1f1f1",
+		"focusBorder": "#0078d4"
+	},
+	"tiles": [
+		{
+			"name": "YouTube",
+			"icon": "assets/icons/youtube.png",
+			"action": "https://www.youtube.com"
+		},
+		{
+			"name": "Explorer",
+			"icon": "assets/icons/files.png",
+			"action": "explorer.exe"
+		},
+		{
+			"name": "Сон",
+			"icon": "assets/icons/sleep.png",
+			"action": "system:sleep"
+		},
+		{
+			"name": "Выключить",
+			"icon": "assets/icons/shutdown.png",
+			"action": "system:shutdown"
+		}
+	]
+}
