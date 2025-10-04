@@ -2,7 +2,7 @@
 
 A minimal, fast, and customizable TV launcher for Windows, built with Electron. Designed to turn any PC into a simple, remote-controlled media center.
 
-> 💡 _Don't forget to add and insert a screenshot of your launcher here!_
+![TV Launcher Screenshot](https://ltdfoto.ru/images/2025/07/17/image5700554897f98202.png)
 
 ---
 
@@ -88,12 +88,6 @@ The launcher is fully configured through a single `config.json` file. Each tile 
   - Website: `"https://example.com"`
   - Application: `"C:/Path/To/App.exe"` or `"notepad.exe"`
   - System command: `"system:sleep"` or `"system:shutdown"`
-
----
-
-## 📸 Screenshot
-
-![TV Launcher Screenshot](https://ltdfoto.ru/images/2025/07/17/image5700554897f98202.png)
 
 ---
 
